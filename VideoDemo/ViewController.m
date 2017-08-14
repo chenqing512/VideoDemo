@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DownLoadManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // http://10003ah.media1.z1.pili.qiniucdn.com/recordings/z1.live-tuoniao.testhuser302/testhuser302_1494313529.m3u8
+    // http://audio.xmcdn.com/group11/M01/93/AF/wKgDa1dzzJLBL0gCAPUzeJqK84Y539.m4a
+    [[DownLoadManager shareInstance] downLoadWithURL:@"http://10003ah.media1.z1.pili.qiniucdn.com/recordings/z1.live-tuoniao.testhuser302/testhuser302_1494313529.m3u8" progress:^(float progress) {
+        NSLog(@"###%f",progress);
+    } success:^(NSString *fileStorePath,NSInteger totalLength) {
+        NSLog(@"###文件路径%@ 大小%zd",fileStorePath,totalLength);
+    } faile:^(NSError *error) {
+        
+    }];
 }
 
 
