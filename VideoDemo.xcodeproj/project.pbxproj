@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165204601F42C9470095938B /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652045A1F42C9470095938B /* DownLoadViewController.m */; };
+		165204611F42C9470095938B /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652045C1F42C9470095938B /* MusicPlayerViewController.m */; };
+		165204621F42C9470095938B /* XYAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1652045F1F42C9470095938B /* XYAVPlayer.m */; };
 		165C32891F408AFF0005620A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 165C32881F408AFF0005620A /* main.m */; };
 		165C328C1F408AFF0005620A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 165C328B1F408AFF0005620A /* AppDelegate.m */; };
 		165C328F1F408AFF0005620A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165C328E1F408AFF0005620A /* ViewController.m */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165204591F42C9470095938B /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		1652045A1F42C9470095938B /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		1652045B1F42C9470095938B /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
+		1652045C1F42C9470095938B /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
+		1652045E1F42C9470095938B /* XYAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAVPlayer.h; sourceTree = "<group>"; };
+		1652045F1F42C9470095938B /* XYAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAVPlayer.m; sourceTree = "<group>"; };
 		165C32841F408AFF0005620A /* VideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165C32881F408AFF0005620A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		165C328A1F408AFF0005620A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1652045D1F42C9470095938B /* XYAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1652045E1F42C9470095938B /* XYAVPlayer.h */,
+				1652045F1F42C9470095938B /* XYAVPlayer.m */,
+			);
+			path = XYAVPlayer;
+			sourceTree = "<group>";
+		};
 		165C327B1F408AFF0005620A = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +88,11 @@
 				165C328E1F408AFF0005620A /* ViewController.m */,
 				165C329E1F4091BA0005620A /* DownLoadManager.h */,
 				165C329F1F4091BA0005620A /* DownLoadManager.m */,
+				165204591F42C9470095938B /* DownLoadViewController.h */,
+				1652045A1F42C9470095938B /* DownLoadViewController.m */,
+				1652045B1F42C9470095938B /* MusicPlayerViewController.h */,
+				1652045C1F42C9470095938B /* MusicPlayerViewController.m */,
+				1652045D1F42C9470095938B /* XYAVPlayer */,
 				165C32A11F409FFB0005620A /* NSString+Hash.h */,
 				165C32A21F409FFB0005620A /* NSString+Hash.m */,
 				165C32901F408AFF0005620A /* Main.storyboard */,
@@ -160,10 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165204611F42C9470095938B /* MusicPlayerViewController.m in Sources */,
 				165C328F1F408AFF0005620A /* ViewController.m in Sources */,
 				165C328C1F408AFF0005620A /* AppDelegate.m in Sources */,
 				165C32891F408AFF0005620A /* main.m in Sources */,
+				165204621F42C9470095938B /* XYAVPlayer.m in Sources */,
 				165C32A31F409FFB0005620A /* NSString+Hash.m in Sources */,
+				165204601F42C9470095938B /* DownLoadViewController.m in Sources */,
 				165C32A01F4091BA0005620A /* DownLoadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +311,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenqing.VideoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -296,7 +327,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenqing.VideoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
