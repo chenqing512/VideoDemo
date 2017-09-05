@@ -143,6 +143,7 @@
 				TargetAttributes = {
 					165C32831F408AFF0005620A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8U489QFL4J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,15 +311,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dabai Global Technology Co.,Ltd (8U489QFL4J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dabai Global Technology Co.,Ltd (8U489QFL4J)";
+				DEVELOPMENT_TEAM = 8U489QFL4J;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenqing.VideoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dabai.health.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5bdd25c-6f8e-421e-ab36-6126c0b025a8";
 			};
 			name = Debug;
 		};
@@ -326,15 +331,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dabai Global Technology Co.,Ltd (8U489QFL4J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dabai Global Technology Co.,Ltd (8U489QFL4J)";
+				DEVELOPMENT_TEAM = 8U489QFL4J;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenqing.VideoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dabai.health.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5bdd25c-6f8e-421e-ab36-6126c0b025a8";
 			};
 			name = Release;
 		};

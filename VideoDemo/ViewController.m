@@ -16,7 +16,6 @@
     NSMutableArray *mDataArray;
 }
 
-
 @end
 
 @implementation ViewController
